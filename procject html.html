@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script type="application/javascript">
+    var p,r,t,si;
+    function calc(f)
+    {
+        p=parseInt(f.principal.value);
+        r=parseInt(f.rate.value);
+        t=parseInt(f.years.value);
+        si=(p*t*r)/100;
+        f.simp.value=si;
+        console.log(simp);
+    }
+    </script>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>SIMPLE INTREST CALCULATOR</title>
+    </head>
+    <body>
+        <center>
+            <form style="border: 1px solid black; width: max-content; height: max-content; align;left;">
+                <h1>SIMPLE INTREST CALCULATOR</h1>
+                Amount:<input type="number" id="principal"><br></br>
+                Interest rate: <input type="number"  id="rate"><br></br>
+                No. of years:<input type="text" id="years"><br></br>
+                Simple Interest:<input type="text" id="simp"><br></br>
+                <input type="button" value="calculate" onclick="calc(this.form)">
+            </form>
+        </center>
+    </body>
+</html>
